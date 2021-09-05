@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  background-color: #b8b8b8;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%239C92AC' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url("img/anime-girl.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-family: 'Architects Daughter', cursive;
+  font-weight: bold;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  width: 250px;
+  height: 50px;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 1.3rem;
+  color: white;
+  background: #000000;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 20px 10px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  position: relative;
+  top: 13.5rem;
+}
+
+button:hover {
+  color: #fe8199;
+  /* filter: brightness(110%); */
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:disabled {
+  cursor: not-allowed;
+  color: white;
+  filter: brightness(30%);
+}
+
+.bubble {
+  display: inline-block;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 1.1rem;
+  padding: 30px 40px;
+  border-radius: 50%;
+  border: 3px solid black;
+  background: white;
+  position: relative;
+  left: 22rem;
+  bottom: 0rem;
+}
+
+.bubble.left:before {
+  border-radius: 0 0 100%;
+  box-shadow: -2px -2px 0 0 #000 inset, -23px 0 0 0 #fff inset, -25px -2px 0 0 #000 inset, -2px -2px 0 0 #000 inset;
+  left: 0;
+  top: 85px;
+  z-index: 5;
+}
+
+.bubble:before {
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  height: 50px;
+  width: 140px;
+}
+
+div .quote_text {
+  width: 880px;
+  height: 600px;
+  line-height: 600px;
+  text-align: center;
+  /* border: 2px dashed #f69c55; */
+  position: relative;
+  top: 12rem;
+}
+span {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  font-size: 2.5rem;
+  padding: 1rem;
+}
+
+/* Media Queries */
+@media (max-width: 1920px) {
+  html {
+    font-size: 100%;
+  }
+
+  button {
+    top: 10.5rem;
+  }
+
+  .bubble {
+    font-size: 1rem;
+    
+    left: 17rem;
+    bottom: 0rem;
+  }
+
+  .bubble.left:before {
+    top: 79px;
+  }
+
+  .bubble:before {
+    width: 110px;
+  }
+
+  div .quote_text {
+    width: 680px;
+    height: 470px;
+    line-height: 470px;
+    top: 7.4rem;
+  }
+
+  span {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1620px) {
+  /* html {
+    font-size: 100%;
+  }
+
+  .container {
+    background-position: center center;
+    background-size: cover;
+  } */
+}
+@media (max-width: 1130px) {
+  html {
+    font-size: 90%;
+  }
+
+  /* .container {
+    background-size: 100%;
+  } */
+
+  button {
+    top: 11.5rem;
+  }
+
+  .bubble.left:before {
+    top: 78px;
+  }
+
+  div .quote_text {
+    width: 650px;
+    height: 450px;
+    line-height: 450px;
+    top: 8rem;
+  }
+}
+@media (max-width: 1024px) {
+  html {
+    font-size: 85%;
+  }
+
+  button {
+    width: 230px;
+    height: 45px;
+    top: 10.5rem;
+  }
+
+  .bubble {
+    font-size: 1rem;
+    
+    left: 17rem;
+    bottom: 2rem;
+  }
+
+  .bubble.left:before {
+    top: 76px;
+  }
+
+  div .quote_text {
+    width: 550px;
+    height: 400px;
+    line-height: 400px;
+    top: 7rem;
+  }
+
+  span {
+    /* font-size: 2.2rem; */
+  }
+}
+@media (max-width: 900px) {
+  html {
+    font-size: 80%;
+  }
+
+  button {
+    width: 200px;
+    height: 45px;
+    top: -21rem;
+  }
+
+  .bubble {
+    bottom: 3rem;
+  }
+
+  div .quote_text {
+    width: 480px;
+    height: 300px;
+    line-height: 300px;
+    top: 6rem;
+  }
+
+  span {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 800px) {
+  button {
+    top: -18rem;
+  }
+
+  div .quote_text {
+    width: 420px;
+    height: 300px;
+    line-height: 300px;
+    top: 4rem;
+  }
+
+  span {
+    font-size: 1.6rem;
+  }
+}
+@media (max-width: 700px) {
+  html {
+    font-size: 75%;
+  }
+
+  button {
+    top: -18.5rem;
+  }
+
+  div .quote_text {
+    width: 370px;
+    height: 240px;
+    line-height: 240px;
+    top: 3rem;
+  }
+
+  span {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 600px) {
+  html {
+    font-size: 65%;
+  }
+
+  button {
+    width: 160px;
+    height: 40px;
+    top: -18rem;
+  }
+
+  .bubble {
+    bottom: 4rem;
+  }
+
+  .bubble.left:before {
+    top: 74px;
+  }
+
+  div .quote_text {
+    width: 300px;
+    height: 200px;
+    line-height: 200px;
+    top: 2rem;
+  }
+
+  span {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 55%;
+  }
+
+  button {
+    width: 130px;
+    height: 35px;
+    top: -20rem;
+  }
+
+  .bubble {
+    bottom: 7rem;
+  }
+
+  .bubble.left:before {
+    top: 72px;
+  }
+
+  div .quote_text {
+    width: 250px;
+    height: 150px;
+    line-height: 150px;
+    top: 1rem;
+  }
+}
+@media (max-width: 400px) {
+  html {
+    font-size: 45%;
+  }
+
+  button {
+    width: 120px;
+    height: 30px;
+    top: -22rem;
+  }
+
+  .bubble {
+    bottom: 8rem;
+  }
+
+  .bubble.left:before {
+    top: 69px;
+  }
+
+  .bubble:before {
+    width: 90px;
+  }
+
+  div .quote_text {
+    width: 200px;
+    height: 130px;
+    line-height: 130px;
+    top: 0rem;
+  }
+}
+@media (max-width: 325px) {
+  html {
+    font-size: 35%;
+  }
+
+  button {
+    width: 80px;
+    height: 25px;
+    top: -15rem;
+  }
+
+  .bubble {
+    display: none;
+  }
+
+  div .quote_text {
+    width: 170px;
+    height: 120px;
+    line-height: 120px;
+    top: 6rem;
+  }
+}
+@media (max-width: 265px) {
+  html {
+    font-size: 25%;
+  }
+
+  button {
+    width: 60px;
+    height: 20px;
+    top: -19rem;
+  }
+
+  .bubble {
+    display: none;
+  }
+
+  div .quote_text {
+    width: 130px;
+    height: 80px;
+    line-height: 80px;
+    top: 7rem;
+  }
+}
+@media (max-width: 210px) {
+  html {
+    font-size: 20%;
+  }
+
+  button {
+    top: -21rem;
+  }
+
+  div .quote_text {
+    width: 90px;
+    height: 50px;
+    line-height: 50px;
+    top: 4rem;
+  }
+}
