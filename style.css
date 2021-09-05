@@ -220,6 +220,10 @@ span {
     top: -21rem;
   }
 
+  button:hover {
+    color: white;
+  }
+
   .bubble {
     bottom: 3rem;
   }
