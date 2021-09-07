@@ -105,6 +105,19 @@ span {
   padding: 1rem;
 }
 
+footer a {
+  color: black;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  padding: 0.3rem 0.5rem;
+}
+
+footer a:visited {
+  color: black;
+}
+
+
 /* Media Queries */
 @media (max-width: 1920px) {
   html {
@@ -218,10 +231,6 @@ span {
     width: 200px;
     height: 45px;
     top: -21rem;
-  }
-
-  button:hover {
-    color: white;
   }
 
   .bubble {
