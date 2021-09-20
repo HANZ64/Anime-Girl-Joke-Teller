@@ -221,6 +221,10 @@ footer a:visited {
   span {
     /* font-size: 2.2rem; */
   }
+  
+  footer a {
+    top: 0;
+  }
 }
 @media (max-width: 900px) {
   html {
