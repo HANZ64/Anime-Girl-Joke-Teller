@@ -203,6 +203,10 @@ footer a:visited {
     height: 45px;
     top: 10.5rem;
   }
+  
+  button:hover {
+    color: whitesmoke;
+  }
 
   button:hover {
     color: whitesmoke;
@@ -229,7 +233,7 @@ footer a:visited {
   span {
     /* font-size: 2.2rem; */
   }
-
+  
   footer a {
     bottom: auto;
     top: 0;
