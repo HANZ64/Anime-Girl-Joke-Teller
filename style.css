@@ -199,6 +199,10 @@ footer a:visited {
     height: 45px;
     top: 10.5rem;
   }
+  
+  button:hover {
+    color: whitesmoke;
+  }
 
   .bubble {
     font-size: 1rem;
