@@ -7,7 +7,6 @@ html {
 
 body {
   margin: 0;
-  background: #ffffff;
   background-color: #b8b8b8;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%239C92AC' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
@@ -45,7 +44,7 @@ button {
 }
 
 button:hover {
-  color: #fe8199;
+  color: #d7adff;
   /* filter: brightness(110%); */
 }
 
@@ -309,7 +308,7 @@ footer a:visited {
   button {
     width: 160px;
     height: 40px;
-    top: -18rem;
+    top: -20rem;
   }
 
   .bubble {
@@ -339,11 +338,11 @@ footer a:visited {
   button {
     width: 130px;
     height: 35px;
-    top: -20rem;
+    top: -17rem;
   }
 
   .bubble {
-    bottom: 7rem;
+    display: none;
   }
 
   .bubble.left:before {
@@ -357,6 +356,11 @@ footer a:visited {
     top: 1rem;
   }
 }
+@media (max-width: 450px) {
+  button {
+    top: -15rem;
+  }
+}
 @media (max-width: 400px) {
   html {
     font-size: 45%;
@@ -365,7 +369,7 @@ footer a:visited {
   button {
     width: 120px;
     height: 30px;
-    top: -22rem;
+    top: -16rem;
   }
 
   .bubble {
@@ -387,6 +391,11 @@ footer a:visited {
     top: 0rem;
   }
 }
+@media (max-width: 350px) {
+  button {
+    top: -13rem;
+  }
+}
 @media (max-width: 325px) {
   html {
     font-size: 35%;
@@ -398,15 +407,16 @@ footer a:visited {
     top: -15rem;
   }
 
-  .bubble {
-    display: none;
-  }
-
   div .quote_text {
     width: 170px;
     height: 120px;
     line-height: 120px;
     top: 6rem;
+  }
+}
+@media (max-width: 300px) {
+  button {
+    top: -13rem;
   }
 }
 @media (max-width: 265px) {
